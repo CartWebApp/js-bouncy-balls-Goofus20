@@ -78,7 +78,7 @@ function random(min, max) {
 
   for (let i = 0; i < balls.length; i++) {
     balls[i].draw();
-    balls[i].update();
+    balls[i].update();  
   }
   requestAnimationFrame(loop);
   balls[i].update();
@@ -86,6 +86,8 @@ function random(min, max) {
  }
 
  loop();
+
+ // ball collision
  
  Ball.prototype.collisionDetect = function() {
   for (let j = 0; j < balls.length; j++) {
@@ -100,3 +102,5 @@ function random(min, max) {
     }
   }
  }
+
+
