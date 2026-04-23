@@ -84,6 +84,7 @@ function random(min, max) {
         balls[j].color = this.color = 'rgb(' + random(0, 255) + ',' + random(0, 255) + ',' + random(0, 255) +')';
         this.velX = -(this.velX);
         this.velY = -(this.velY);
+        balls[j].size = this.size = random(10, 20);
       }
     }
   }
